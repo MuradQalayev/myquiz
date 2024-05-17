@@ -40,3 +40,54 @@ h2{
     font-weight: 500;
     margin: 0;
 }
+
+ul {
+    margin-top: 20px;
+    margin-left: -40px;
+    list-style: none; // Move list-style to ul to remove bullets
+    
+    li {
+        text-decoration: none;
+        font-size: 16px;
+        color: $foreground;
+        background: $bg;
+        border: 1px solid $disabled; // Use defined border color
+        border-radius: 16px;
+        padding: 11px;
+        margin-top: 15px;
+        cursor: pointer;
+        
+        &:hover {
+            background: darken($bg, 5%); // Darken the background color on hover
+        }
+        
+        &.selected-answer {
+            background: $primary;
+            border: 1px solid $accent;
+            color: $bg;
+        }
+    }
+
+}
+
+.footer{
+    display: flex;
+    justify-content: flex-end;
+
+}
+button{
+    background: linear-gradient(0deg,$primary, 0.03%,$accent);
+    border-radius: 9px;
+    font-size: 18px;
+    color: $bg;
+    padding: 10px 42px;
+    outline:none;
+    border:none;
+    margin-top: 15px;
+    cursor: pointer;
+        &:disabled{
+        background: $bg-accent;
+        color:$disabled;
+        cursor: not-allowed;
+        }
+}
