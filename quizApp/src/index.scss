@@ -1,5 +1,5 @@
-$primary: #150080;
-$accent: #d08642;
+$primary: #2b00ff;
+$accent: #f37702;
 $bg: #ffffff;
 $bg-accent: #e7e8e9;
 $disabled: #9c9c9c;
@@ -16,6 +16,27 @@ body{
 }
 
 .quiz-container{
+    width: 500px;
+    background: $bg;
+    border-radius: 4px;
+    margin-top: 100px;
+    padding: 30px 60px;
+    box-sizing: border-box;
+}
+.active-question-no{
+    font-size: 32px;
+    font-weight: 500;
+    color:$primary;
 
+}
+.total-questions{
+    font-size: 16px;
+    font-weight: 500;
+    color: $disabled;
 
+}
+h2{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
 }
